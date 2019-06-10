@@ -10,7 +10,16 @@ export default new Router({
     {
       path: '/',
       
-      component: Index
-    }
+      component: Index,
+      
+      children:[
+        {
+          
+            path:"/detail1",
+            component:()=>import("@/components/detail1")
+        }
+      ]
+    },
+    
   ]
 })

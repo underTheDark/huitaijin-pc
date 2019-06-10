@@ -80,14 +80,14 @@ export default {
 <style scoped>
 #index{
 height:2924px;
- width:1440px;  
+
  margin:0 auto;
 }
 /* 头部 */
 #header{
 
 height:72px;
-background:rgba(0,0,0,1);
+
 opacity:0.9;
 overflow: hidden;
 }
@@ -95,12 +95,13 @@ overflow: hidden;
     float:left;
     margin-left:130px;
     height:72px;
-   
+    display:table-cell;
+    vertical-align: middle;
 }
 .header-left img{
 width:48px;
 height:48px;
-
+vertical-align: middle;
 }
 .header-left span{
 display:inline-block;
@@ -116,6 +117,7 @@ color:rgba(0,78,30,1);
 .header-right{
     float:right;
     height:72px;
+    margin-right:130px;
 }
 .header-right .el-menu{
 height:100%;
@@ -126,20 +128,19 @@ height:100%;
     margin:0 36px;
     color:rgba(51,51,51,1);
     padding:0;
-    
-
-}
-.el-menu .is-active{
-     color:rgba(0,61,34,1);
-    border-color:rgba(0,61,34,1)
+    }
+.el-menu--horizontal>.el-menu-item.is-active {
+    color:rgba(0,61,34,1);
+    border-color:rgba(0,61,34,1);
 }
 
 
 /* 尾部 */
 #footer{
-    width:1440px;
-height:280px;
+ 
+height:224px;
 background:linear-gradient(135deg,rgba(96,205,151,1) 0%,rgba(34,149,108,1) 100%);
+padding-top:56px;
 }
 .footer-left{
     float:left;
@@ -147,29 +148,29 @@ background:linear-gradient(135deg,rgba(96,205,151,1) 0%,rgba(34,149,108,1) 100%)
     width:436px;
 }
 .footer-left div:nth-child(1){
-    overflow: hidden;
+   
     height:48px;
     line-height:48px;
-    margin:56px 0 20px;
+    margin-bottom:20px;
+   
+     display:table-cell;
+    vertical-align: middle;
 }
 .footer-left  div:nth-child(1) img{
     width:48px;
     height:48px;
-    
-    border: none;
-    float:left;
+     border: none;
+   
+    vertical-align: middle;
 }
 .footer-left div:nth-child(1) span{
-    float:left;
-    display: inline-block;
+    
     width:112px;
-    height:48px; 
-line-height:48px;
-font-size:16px;
+    font-size:16px;
 font-family:PingFangSC-Semibold;
 font-weight:600;
 color:rgba(255,255,255,1);
-line-height:22px;
+
 }
 
 .footer-left div:nth-child(2){
@@ -208,25 +209,21 @@ color:rgba(255,255,255,1);
     float:left;
     margin-left:80px;
     text-align: left;
+    font-size:14px;
+font-family:PingFangSC-Semibold;
+color:rgba(255,255,255,1);
 }
 .footer-right div:nth-child(1){
-margin:56px 0 20px 0;
+margin-bottom:5px;
  height:48px;
 font-size:16px;
 font-family:PingFangSC-Semibold;
 font-weight:600;
-color:rgba(255,255,255,1);
+
 line-height:48px;
 }
 
-.footer-right{
-    height:20px;
-font-size:14px;
-font-family:PingFangSC-Semibold;
 
-color:rgba(255,255,255,1);
-line-height:20px;
-}
 .footer-right .shugang{
     border-right:1px solid white;
     margin:0 10px;
