@@ -11,15 +11,38 @@ export default new Router({
       path: '/',
       
       component: Index,
-      
+      redirect:"/home"
+    },
+    {
+      path:"/index",
+      component:()=>import("@/components/index"),
+      redirect:"/home",
       children:[
         {
-          
-            path:"/detail1",
-            component:()=>import("@/components/detail1")
-        }
+          path:"/home",
+          component:()=>import("@/components/home")
+        },
+        {
+             path:"/detail1",
+             component:()=>import("@/components/detail1")
+        },
+        {
+          path:"/detail2",
+          component:()=>import("@/components/detail2")
+        },
+       {
+       path:"/detail3",
+       component:()=>import("@/components/detail3")
+      },
+      {
+        path:"/about",
+        component:()=>import("@/components/about")
+       },
+       {
+        path:"/connect",
+        component:()=>import("@/components/connect")
+       },
       ]
-    },
-    
+    }
   ]
 })

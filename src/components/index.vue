@@ -31,7 +31,9 @@
              <div>河南汇台金集团是一家以动物营养科技、尖端生物科技为基础，严格按照兽药GMP标准建造，专业从事高端饲料添加剂科研、生产、销售于一体的科技型技术企业。</div>
              <div class="partThree">
                  <span>京公网安备&nbsp;11000002000088号</span>
+                  <span class="shugang">|</span>
                  <span>营业执照</span>
+                  <span class="shugang">|</span>
                  <span>经营执照</span>
              </div>
         </div>
@@ -39,9 +41,9 @@
             <div>关于</div>
             <div>
                 <span>公司名称：河南汇台金实业有限公司</span>
-                <span class="shugang"></span>
+                <span class="shugang">|</span>
                  <span>销售地址：花园路69号</span>
-                 <span class="shugang"></span>
+                 <span class="shugang">|</span>
                   <span>生产地址：河南省郑州市花园口工业区</span>
             </div>
              <div>
@@ -79,9 +81,9 @@ export default {
 
 <style scoped>
 #index{
-height:2924px;
 
- margin:0 auto;
+
+width:100%;
 }
 /* 头部 */
 #header{
@@ -180,6 +182,7 @@ font-size:12px;
 font-family:PingFangSC-Semibold;
 font-weight:500;
 color:white;
+margin-top:10px;
 }
 .footer-left div:nth-child(3){
     margin-top:30px;
@@ -191,23 +194,13 @@ font-weight:500;
 color:rgba(255,255,255,1);
 
 }
-.footer-left .partThree span{
- border-right:1px solid white;
- margin-right:0;
- padding:0 10px;
-}
-.footer-left .partThree span:nth-child(3){
- border-right:none;
-}
-.footer-left .partThree span:nth-child(1){
- padding-left:0;
 
-}
+
 
 /* 尾部右部分 */
 .footer-right{
     float:left;
-    margin-left:80px;
+    margin-left:10%;
     text-align: left;
     font-size:14px;
 font-family:PingFangSC-Semibold;
@@ -224,9 +217,8 @@ line-height:48px;
 }
 
 
-.footer-right .shugang{
-    border-right:1px solid white;
-    margin:0 10px;
+#footer .shugang{
+   padding:0 5px ;
 }
 .footer-right div:nth-child(3){
     margin:10px 0;
